@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "ClassMateApp",
+    "slug": "classmate-app",
+    "version": "1.0.0",
+    "platforms": ["ios", "android", "web"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.classmateapp",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.classmateapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}
