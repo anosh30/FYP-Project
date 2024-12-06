@@ -1,0 +1,29 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "target": "ES6", // Ensures modern JavaScript support
+    "module": "CommonJS", // Required for Node.js compatibility
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "skipLibCheck": true, // Skips type checking for libraries
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src" // Root directory for your TypeScript source files
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "src/**/*.ts", // Includes backend TypeScript files
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Excludes compiled files and dependencies
+}
